@@ -1,104 +1,90 @@
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OperaIntel | AI-Driven Optimization</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OperaIntel | AI-Driven Optimization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">OperaIntel</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="solutions/performance.html">Solutions</a></li>
-      <li><a href="synaptic-link.html">Synaptic Link</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">OperaIntel</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#synaptic-link">Synaptic Link</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Transform Performance with Predictive Analytics & Simulation</h1>
-    <p>Measure employees, train teams, simulate operations, and predict outcomes—all in one platform.</p>
-    <div class="cta">
-      <a href="#demo" class="btn">See How It Works</a>
-      <a href="#contact" class="btn secondary">Book a Consultation</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Transform Performance with Predictive Analytics & Simulation</h1>
+        <p>Measure employees, train teams, simulate operations, and predict outcomes—all in one platform.</p>
+        <div class="cta">
+            <a href="#demo" class="btn">See How It Works</a>
+            <a href="#contact" class="btn secondary">Book a Consultation</a>
+        </div>
+    </section>
 
-  <!-- Solutions Grid -->
-  <section class="solutions">
-    <div class="card">
-      <h3>Performance Intelligence</h3>
-      <p>Real-time analytics for employees, operations, and customers.</p>
-    </div>
-    <div class="card">
-      <h3>SkillSynth Academy</h3>
-      <p>AI-powered soft skills training with measurable ROI.</p>
-    </div>
-    <div class="card">
-      <h3>SimuLogic Studio</h3>
-      <p>Discrete-event simulation for "what-if" scenarios.</p>
-    </div>
-  </section>
+    <!-- Solutions Section -->
+    <section class="solutions" id="solutions">
+        <h2>Our Solutions</h2>
+        <div class="solutions-grid">
+            <!-- Performance Intelligence -->
+            <div class="solution-card">
+                <h3>Performance Intelligence</h3>
+                <p>Real-time analytics for employees, operations, and customers.</p>
+                <div class="kpi-demo">
+                    <div class="kpi-bar" style="width: 70%;">Employee Productivity: 70%</div>
+                    <div class="kpi-bar" style="width: 85%;">Customer Satisfaction: 85%</div>
+                </div>
+                <button class="simulate-btn" onclick="simulateKPI()">Simulate +10%</button>
+            </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 OperaIntel. All rights reserved.</p>
-  </footer>
+            <!-- SkillSynth Academy -->
+            <div class="solution-card">
+                <h3>SkillSynth Academy</h3>
+                <p>AI-powered soft skills training with measurable ROI.</p>
+                <div class="chat-demo">
+                    <div class="chat-message ai">AI: How would you handle an angry customer?</div>
+                    <input type="text" id="chat-input" placeholder="Type your response...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
 
-  <script src="js/script.js"></script>
+            <!-- SimuLogic Studio -->
+            <div class="solution-card">
+                <h3>SimuLogic Studio</h3>
+                <p>Test every decision before you make it.</p>
+                <div class="simulation-demo">
+                    <div class="item" draggable="true">🤖 Robot</div>
+                    <div class="item" draggable="true">👷 Worker</div>
+                    <div class="drop-zone">Drop here to simulate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Synaptic Link Section -->
+    <section class="synaptic-link" id="synaptic-link">
+        <h2>Synaptic Link: Predictive Optimization Engine</h2>
+        <p>Connect performance data, training, and simulations to forecast outcomes.</p>
+        <div class="engine-diagram">
+            <div class="engine-step">1. Measure</div>
+            <div class="engine-step">2. Predict</div>
+            <div class="engine-step">3. Optimize</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contact us: hello@opera-intel.com</p>
+        <p>&copy; 2024 OperaIntel. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
-
-/*Performance Intelligence Dashboard (Interactive Card)*/
-
-
-/********************PM Dashboard*****************************/
-
-
-<div class="card" id="performance-card">
-  <h3>Performance Intelligence</h3>
-  <div class="dashboard-preview">
-    <div class="kpi-bar" style="width: 70%">Employee Productivity: 70%</div>
-    <div class="kpi-bar" style="width: 85%">Customer Satisfaction: 85%</div>
-  </div>
-  <button class="simulate-btn" onclick="simulateKPI()">Simulate Improvement</button>
-</div>
-
-
-/********************Skillsyth Acadmey**********************/
-
-<div class="card" id="training-card">
-  <h3>SkillSynth Academy</h3>
-  <div class="chat-demo">
-    <div class="chat-message ai">AI: How would you handle an angry customer?</div>
-    <div class="chat-message user">User: I'd listen first, then apologize.</div>
-    <input type="text" id="chat-input" placeholder="Type your response...">
-    <button onclick="sendMessage()">Send</button>
-  </div>
-</div>
-
-
-/********************Simulation********************************/
-
-
-<div class="card" id="simulation-card">
-  <h3>SimuLogic Studio</h3>
-  <div class="warehouse-demo">
-    <div class="item" draggable="true" id="robot">🤖 Robot</div>
-    <div class="item" draggable="true" id="worker">👷 Worker</div>
-    <div class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  </div>
-</div>
-
-
-
-
-
-
-
