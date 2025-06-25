@@ -20,3 +20,12 @@ body {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Hero section with background image */
+.hero {
+  background: url('../images/pic1.npg') no-repeat center/cover;
+  height: 400px;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
