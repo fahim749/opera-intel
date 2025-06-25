@@ -78,3 +78,19 @@ footer {
   background: #2E3B4E;
   color: white;
 }
+
+:root {
+  --primary: #2E3B4E;    /* Navy */
+  --secondary: #00C9A7;  /* Teal */
+  --accent: #6C5CE7;     /* Purple */
+  --text: #2D3436;       /* Dark gray */
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #f5f7fa, #e4e8f0);
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif; /* Bold headlines */
+}
+
+
