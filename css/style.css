@@ -97,6 +97,22 @@ footer {
   color: white;
 }
 
+/* =============PM intelligent Dashboard======================*/
 
+.kpi-bar {
+  height: 20px;
+  background: var(--secondary);
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: width 1s;
+}
+.simulate-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 
