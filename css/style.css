@@ -1,178 +1,22 @@
-/* Global Styles */
-
-
-:root {
-  --primary: #2E3B4E;    /* Navy */
-  --secondary: #00C9A7;  /* Teal */
-  --accent: #6C5CE7;     /* Purple */
-  --text: #2D3436;       /* Dark gray */
-}
+/* ===== General Styles ===== */
 body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #f5f7fa, #e4e8f0);
-}
-h1, h2, h3 {
-  font-family: 'Poppins', sans-serif; /* Bold headlines */
-}
-
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 5%;
-  background: #2E3B4E;
-  color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
+/* ===== Solutions Grid ===== */
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
-nav ul li {
-  margin-left: 2rem;
+.solution-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.hero {
-  text-align: center;
-  padding: 5rem 1rem;
-  background: linear-gradient(135deg, #2E3B4E 0%, #3A516B 100%);
-  color: white;
-  animation: float 6s ease-in-out infinite;
-}
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-
-
-  
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-}
-
-.cta {
-  margin-top: 2rem;
-}
-
-.btn {
-  padding: 0.8rem 1.5rem;
-  background: #00C9A7;
-  color: white;
-  border-radius: 4px;
-  text-decoration: none;
-  margin: 0 0.5rem;
-}
-
-.secondary {
-  background: transparent;
-  border: 1px solid white;
-}
-
-.solutions {
-  display: flex;
-  justify-content: center;
-  padding: 3rem 1rem;
-  flex-wrap: wrap;
-}
-
-.card {
-  width: 300px;
-  margin: 1rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #2E3B4E;
-  color: white;
-}
-
-/* =============PM intelligent Dashboard======================*/
-
-.kpi-bar {
-  height: 20px;
-  background: var(--secondary);
-  margin: 10px 0;
-  border-radius: 10px;
-  transition: width 1s;
-}
-.simulate-btn {
-  background: var(--accent);
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-
-/***************Skillsyth academy**************************/
-
-.chat-demo {
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 8px;
-  height: 200px;
-  overflow-y: auto;
-}
-.chat-message {
-  margin: 5px;
-  padding: 8px;
-  border-radius: 4px;
-}
-.ai { background: #f0f0f0; }
-.user { background: var(--secondary); color: white; }
-
-
-/****************simulaiton**********************************/
-
-
-
-.warehouse-demo {
-  height: 150px;
-  border: 2px dashed #ccc;
-  padding: 10px;
-  display: flex;
-  gap: 10px;
-}
-.item {
-  padding: 8px;
-  background: var(--accent);
-  color: white;
-  border-radius: 4px;
-  cursor: move;
-}
-.drop-zone {
-  flex-grow: 1;
-  background: #f9f9f9;
-}
-
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-button:hover {
-  opacity: 0.9;
-  transform: scale(1.02);
-}
-
-
-
-
-
-
-
-
-
-
