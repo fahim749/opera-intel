@@ -116,3 +116,56 @@ footer {
 }
 
 
+/***************Skillsyth academy**************************/
+
+.chat-demo {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  height: 200px;
+  overflow-y: auto;
+}
+.chat-message {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 4px;
+}
+.ai { background: #f0f0f0; }
+.user { background: var(--secondary); color: white; }
+
+
+/****************simulaiton**********************************/
+
+
+
+.warehouse-demo {
+  height: 150px;
+  border: 2px dashed #ccc;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+.item {
+  padding: 8px;
+  background: var(--accent);
+  color: white;
+  border-radius: 4px;
+  cursor: move;
+}
+.drop-zone {
+  flex-grow: 1;
+  background: #f9f9f9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
