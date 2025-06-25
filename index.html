@@ -58,6 +58,8 @@
 /*Performance Intelligence Dashboard (Interactive Card)*/
 
 
+/********************PM Dashboard*****************************/
+
 
 <div class="card" id="performance-card">
   <h3>Performance Intelligence</h3>
@@ -67,6 +69,33 @@
   </div>
   <button class="simulate-btn" onclick="simulateKPI()">Simulate Improvement</button>
 </div>
+
+
+/********************Skillsyth Acadmey**********************/
+
+<div class="card" id="training-card">
+  <h3>SkillSynth Academy</h3>
+  <div class="chat-demo">
+    <div class="chat-message ai">AI: How would you handle an angry customer?</div>
+    <div class="chat-message user">User: I'd listen first, then apologize.</div>
+    <input type="text" id="chat-input" placeholder="Type your response...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+
+/********************Simulation********************************/
+
+
+<div class="card" id="simulation-card">
+  <h3>SimuLogic Studio</h3>
+  <div class="warehouse-demo">
+    <div class="item" draggable="true" id="robot">🤖 Robot</div>
+    <div class="item" draggable="true" id="worker">👷 Worker</div>
+    <div class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+</div>
+
 
 
 
