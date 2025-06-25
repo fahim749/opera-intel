@@ -1,10 +1,20 @@
 /* Global Styles */
+
+
+:root {
+  --primary: #2E3B4E;    /* Navy */
+  --secondary: #00C9A7;  /* Teal */
+  --accent: #6C5CE7;     /* Purple */
+  --text: #2D3436;       /* Dark gray */
+}
 body {
   font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
+  background: linear-gradient(to right, #f5f7fa, #e4e8f0);
 }
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif; /* Bold headlines */
+}
+
 
 nav {
   display: flex;
@@ -33,6 +43,14 @@ nav a {
   padding: 5rem 1rem;
   background: linear-gradient(135deg, #2E3B4E 0%, #3A516B 100%);
   color: white;
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+
+
+  
 }
 
 .hero h1 {
@@ -79,18 +97,6 @@ footer {
   color: white;
 }
 
-:root {
-  --primary: #2E3B4E;    /* Navy */
-  --secondary: #00C9A7;  /* Teal */
-  --accent: #6C5CE7;     /* Purple */
-  --text: #2D3436;       /* Dark gray */
-}
-body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #f5f7fa, #e4e8f0);
-}
-h1, h2, h3 {
-  font-family: 'Poppins', sans-serif; /* Bold headlines */
-}
+
 
 
